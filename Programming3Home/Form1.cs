@@ -16,5 +16,19 @@ namespace Programming3Home
         {
             InitializeComponent();
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            // Create a new instance of the Form2 class
+            Search_Engine SearchForm = new Search_Engine();
+
+            // Show the settings form
+            SearchForm.Show();
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
