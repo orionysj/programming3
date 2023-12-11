@@ -54,14 +54,18 @@
             // 
             // ClientDataTable
             // 
+            this.ClientDataTable.AllowUserToAddRows = false;
+            this.ClientDataTable.AllowUserToDeleteRows = false;
             this.ClientDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientDataTable.Location = new System.Drawing.Point(18, 125);
             this.ClientDataTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClientDataTable.Name = "ClientDataTable";
             this.ClientDataTable.RowHeadersWidth = 57;
             this.ClientDataTable.RowTemplate.Height = 24;
+            this.ClientDataTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ClientDataTable.Size = new System.Drawing.Size(736, 540);
             this.ClientDataTable.TabIndex = 1;
+            this.ClientDataTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClientDataTable_CellContentClick);
             // 
             // textBox1
             // 
@@ -81,6 +85,7 @@
             this.SearchButton.TabIndex = 3;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // AddClientButton
             // 
@@ -122,6 +127,7 @@
             this.OrderClientButton.TabIndex = 7;
             this.OrderClientButton.Text = "Order Clients by Detail";
             this.OrderClientButton.UseVisualStyleBackColor = true;
+            this.OrderClientButton.Click += new System.EventHandler(this.OrderClientButton_Click);
             // 
             // SaveClientButton
             // 
