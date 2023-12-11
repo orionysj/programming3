@@ -1,0 +1,17 @@
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\bin\Debug\Programming3Home.exe.config
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\bin\Debug\Programming3Home.exe
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\bin\Debug\Programming3Home.pdb
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.csproj.AssemblyReference.cache
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Form1.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Order.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Print.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.PrintConfirmation.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.PrintRedirect.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Properties.Resources.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Remove.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.RemoveConfirmation.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.Removedone.resources
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.csproj.GenerateResource.cache
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.csproj.CoreCompileInputs.cache
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.exe
+C:\Users\lukef\OneDrive\Documents\York St John - Computer Science\Year 2\Programming 3\Programming3\Programming3Home\obj\Debug\Programming3Home.pdb

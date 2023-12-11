@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Programming3Home
 {
-    public partial class Form1 : Form
+    public partial class Removedone : Form
     {
-        public Form1()
+        public Removedone()
         {
             InitializeComponent();
         }
 
-        private void AddClientButton_Click(object sender, EventArgs e)
+        private void removeok_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void RemoveClientButton_Click(object sender, EventArgs e)
-        {
-            Remove SearchForm = new Remove();
-            SearchForm.Show();
+            this.Close();
         }
     }
 }

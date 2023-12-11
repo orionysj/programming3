@@ -10,22 +10,24 @@ using System.Windows.Forms;
 
 namespace Programming3Home
 {
-    public partial class Form1 : Form
+    public partial class RemoveConfirmation : Form
     {
-        public Form1()
+        public RemoveConfirmation()
         {
             InitializeComponent();
         }
 
-        private void AddClientButton_Click(object sender, EventArgs e)
+        private void removeno_Click(object sender, EventArgs e)
         {
-
+            Form1 SearchForm = new Form1();
+            SearchForm.Show();
         }
 
-        private void RemoveClientButton_Click(object sender, EventArgs e)
+        private void removeyes_Click(object sender, EventArgs e)
         {
-            Remove SearchForm = new Remove();
+            Removedone SearchForm = new Removedone();
             SearchForm.Show();
+            this.Close();
         }
     }
 }

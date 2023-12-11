@@ -58,13 +58,58 @@
     <Compile Include="Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintConfirmation.Designer.cs">
+      <DependentUpon>PrintConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRedirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRedirect.Designer.cs">
+      <DependentUpon>PrintRedirect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove.Designer.cs">
+      <DependentUpon>Remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveConfirmation.Designer.cs">
+      <DependentUpon>RemoveConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Removedone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Removedone.Designer.cs">
+      <DependentUpon>Removedone.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintConfirmation.resx">
+      <DependentUpon>PrintConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRedirect.resx">
+      <DependentUpon>PrintRedirect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +120,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Remove.resx">
+      <DependentUpon>Remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveConfirmation.resx">
+      <DependentUpon>RemoveConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Removedone.resx">
+      <DependentUpon>Removedone.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
