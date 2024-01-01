@@ -71,7 +71,7 @@ namespace Programming3Home
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-            var home = new Form1();
+            var home = new Home();
             home.Location = this.Location;
             home.StartPosition = FormStartPosition.Manual;
             home.FormClosing += delegate { this.Show(); };

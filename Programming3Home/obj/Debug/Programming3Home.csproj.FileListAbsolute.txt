@@ -75,7 +75,6 @@ C:\Users\owner\source\repos\programming3\Programming3Home\bin\Debug\System.Threa
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.AssemblyReference.cache
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.SuggestedBindingRedirects.cache
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.exe.config
-C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Form1.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Properties.Resources.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Search_engine.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.GenerateResource.cache
@@ -116,3 +115,4 @@ C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\System.Threa
 C:\Users\kyleh\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.Fody.CopyLocal.cache
 C:\Users\kyleh\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.AddRecord.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.AddRecord.resources
+C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Home.resources

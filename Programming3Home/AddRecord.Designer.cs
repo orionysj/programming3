@@ -44,6 +44,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkAccessories = new System.Windows.Forms.CheckBox();
+            this.checkOfficeTools = new System.Windows.Forms.CheckBox();
+            this.checkGames = new System.Windows.Forms.CheckBox();
+            this.checkLaptops = new System.Windows.Forms.CheckBox();
+            this.checkSoftware = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,12 +62,6 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.Search = new System.Windows.Forms.Label();
-            this.checkSoftware = new System.Windows.Forms.CheckBox();
-            this.checkLaptops = new System.Windows.Forms.CheckBox();
-            this.checkGames = new System.Windows.Forms.CheckBox();
-            this.checkOfficeTools = new System.Windows.Forms.CheckBox();
-            this.checkAccessories = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.paneMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -293,6 +293,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.checkAccessories);
             this.panel3.Controls.Add(this.checkOfficeTools);
@@ -316,6 +317,72 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(207, 531);
             this.panel3.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(19, 291);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 17);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Services";
+            // 
+            // checkAccessories
+            // 
+            this.checkAccessories.AutoSize = true;
+            this.checkAccessories.Font = new System.Drawing.Font("Times New Roman", 8.75F);
+            this.checkAccessories.Location = new System.Drawing.Point(22, 357);
+            this.checkAccessories.Name = "checkAccessories";
+            this.checkAccessories.Size = new System.Drawing.Size(83, 19);
+            this.checkAccessories.TabIndex = 36;
+            this.checkAccessories.Text = "Accessories";
+            this.checkAccessories.UseVisualStyleBackColor = true;
+            // 
+            // checkOfficeTools
+            // 
+            this.checkOfficeTools.AutoSize = true;
+            this.checkOfficeTools.Font = new System.Drawing.Font("Times New Roman", 8.75F);
+            this.checkOfficeTools.Location = new System.Drawing.Point(108, 333);
+            this.checkOfficeTools.Name = "checkOfficeTools";
+            this.checkOfficeTools.Size = new System.Drawing.Size(86, 19);
+            this.checkOfficeTools.TabIndex = 35;
+            this.checkOfficeTools.Text = "Office Tools";
+            this.checkOfficeTools.UseVisualStyleBackColor = true;
+            // 
+            // checkGames
+            // 
+            this.checkGames.AutoSize = true;
+            this.checkGames.Font = new System.Drawing.Font("Times New Roman", 8.75F);
+            this.checkGames.Location = new System.Drawing.Point(22, 334);
+            this.checkGames.Name = "checkGames";
+            this.checkGames.Size = new System.Drawing.Size(59, 19);
+            this.checkGames.TabIndex = 34;
+            this.checkGames.Text = "Games";
+            this.checkGames.UseVisualStyleBackColor = true;
+            // 
+            // checkLaptops
+            // 
+            this.checkLaptops.AutoSize = true;
+            this.checkLaptops.Font = new System.Drawing.Font("Times New Roman", 8.75F);
+            this.checkLaptops.Location = new System.Drawing.Point(108, 311);
+            this.checkLaptops.Name = "checkLaptops";
+            this.checkLaptops.Size = new System.Drawing.Size(67, 19);
+            this.checkLaptops.TabIndex = 33;
+            this.checkLaptops.Text = "Laptops";
+            this.checkLaptops.UseVisualStyleBackColor = true;
+            // 
+            // checkSoftware
+            // 
+            this.checkSoftware.AutoSize = true;
+            this.checkSoftware.Font = new System.Drawing.Font("Times New Roman", 8.75F);
+            this.checkSoftware.Location = new System.Drawing.Point(22, 311);
+            this.checkSoftware.Name = "checkSoftware";
+            this.checkSoftware.Size = new System.Drawing.Size(69, 19);
+            this.checkSoftware.TabIndex = 32;
+            this.checkSoftware.Text = "Software";
+            this.checkSoftware.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -434,72 +501,6 @@
             this.Search.TabIndex = 31;
             this.Search.Text = "Add Records";
             this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkSoftware
-            // 
-            this.checkSoftware.AutoSize = true;
-            this.checkSoftware.Font = new System.Drawing.Font("Times New Roman", 8.75F);
-            this.checkSoftware.Location = new System.Drawing.Point(22, 311);
-            this.checkSoftware.Name = "checkSoftware";
-            this.checkSoftware.Size = new System.Drawing.Size(69, 19);
-            this.checkSoftware.TabIndex = 32;
-            this.checkSoftware.Text = "Software";
-            this.checkSoftware.UseVisualStyleBackColor = true;
-            // 
-            // checkLaptops
-            // 
-            this.checkLaptops.AutoSize = true;
-            this.checkLaptops.Font = new System.Drawing.Font("Times New Roman", 8.75F);
-            this.checkLaptops.Location = new System.Drawing.Point(108, 311);
-            this.checkLaptops.Name = "checkLaptops";
-            this.checkLaptops.Size = new System.Drawing.Size(67, 19);
-            this.checkLaptops.TabIndex = 33;
-            this.checkLaptops.Text = "Laptops";
-            this.checkLaptops.UseVisualStyleBackColor = true;
-            // 
-            // checkGames
-            // 
-            this.checkGames.AutoSize = true;
-            this.checkGames.Font = new System.Drawing.Font("Times New Roman", 8.75F);
-            this.checkGames.Location = new System.Drawing.Point(22, 334);
-            this.checkGames.Name = "checkGames";
-            this.checkGames.Size = new System.Drawing.Size(59, 19);
-            this.checkGames.TabIndex = 34;
-            this.checkGames.Text = "Games";
-            this.checkGames.UseVisualStyleBackColor = true;
-            // 
-            // checkOfficeTools
-            // 
-            this.checkOfficeTools.AutoSize = true;
-            this.checkOfficeTools.Font = new System.Drawing.Font("Times New Roman", 8.75F);
-            this.checkOfficeTools.Location = new System.Drawing.Point(108, 333);
-            this.checkOfficeTools.Name = "checkOfficeTools";
-            this.checkOfficeTools.Size = new System.Drawing.Size(86, 19);
-            this.checkOfficeTools.TabIndex = 35;
-            this.checkOfficeTools.Text = "Office Tools";
-            this.checkOfficeTools.UseVisualStyleBackColor = true;
-            // 
-            // checkAccessories
-            // 
-            this.checkAccessories.AutoSize = true;
-            this.checkAccessories.Font = new System.Drawing.Font("Times New Roman", 8.75F);
-            this.checkAccessories.Location = new System.Drawing.Point(22, 357);
-            this.checkAccessories.Name = "checkAccessories";
-            this.checkAccessories.Size = new System.Drawing.Size(83, 19);
-            this.checkAccessories.TabIndex = 36;
-            this.checkAccessories.Text = "Accessories";
-            this.checkAccessories.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(19, 291);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 17);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Services";
             // 
             // AddRecord
             // 
