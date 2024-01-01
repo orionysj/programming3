@@ -11,10 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 
+///The search engine part of this project was completed by Kyle Hutchinson
+
 namespace Programming3Home
 {
     public partial class Search_Engine : Form
     {
+        private System.Windows.Forms.Timer refreshTimer;
         private Button currentButton;
         private Random random;
         private int tempIndex;
@@ -22,116 +25,18 @@ namespace Programming3Home
         public Search_Engine()
         {
             InitializeComponent();
+
+            comboBox1.Text = "ClientID";
+
+            // Initialize the Timer
+            refreshTimer = new System.Windows.Forms.Timer();
+            refreshTimer.Interval = 10; // 1000 milliseconds = 1 second
+            refreshTimer.Tick += new EventHandler(refreshTimer_Tick);
+            refreshTimer.Start();
+
+
         }
-        public class MySQLConnector
-        {
-            private MySqlConnection connection;
-            private string server;
-            private string database;
-            private string username;
-            private string password;
-
-            public MySQLConnector()
-            {
-                Initialize();
-            }
-
-            // Initialize the connection properties
-            private void Initialize()
-            {
-                server = "ysjcs.net"; // Replace with your MySQL server hostname or IP address
-                database = "kylehutchinson_Programming_Project"; // Replace with your MySQL database name
-                username = "kyle.hutchinson"; // Replace with your MySQL username
-                password = "UYLXWYMQ"; // Replace with your MySQL password
-
-                string connectionString = $"Server={server};Database={database};Uid={username};Pwd={password};";
-                connection = new MySqlConnection(connectionString);
-            }
-
-            public bool OpenConnection()
-            {
-                try
-                {
-                    if (connection?.State != System.Data.ConnectionState.Open)
-                        connection?.Open();
-                    return true;
-                }
-                catch (MySqlException ex)
-                {
-                    // Handle the exception (e.g., log it or display an error message)
-                    Console.WriteLine($"Error: {ex.Message}");
-                    return false;
-                }
-            }
-
-            public bool CloseConnection()
-            {
-                try
-                {
-                    if (connection != null && connection.State != System.Data.ConnectionState.Closed)
-                    {
-                        connection.Close();
-                    }
-                    return true;
-                }
-                catch (MySqlException ex)
-                {
-                    Console.WriteLine($"Error: {ex.Message}");
-                    return false;
-                }
-                finally
-                {
-                    connection?.Dispose(); // Dispose of the connection if it’s not null
-                }
-            }
-
-            public DataTable ExecuteQuery(string query, MySqlParameter[] parameters = null)
-            {
-                DataTable dataTable = new DataTable();
-                if (OpenConnection())
-                {
-                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                    {
-                        if (parameters != null)
-                        {
-                            cmd.Parameters.AddRange(parameters);
-                        }
-                        try
-                        {
-                            using (MySqlDataReader reader = cmd.ExecuteReader())
-                            {
-                                dataTable.Load(reader);
-                            }
-                        }
-                        catch (MySqlException ex)
-                        {
-                            MessageBox.Show($"Error: {ex.Message}");
-                        }
-                    }
-                    CloseConnection();
-                }
-                return dataTable;
-            }
-
-            public void ExecuteNonQuery(string query)
-            {
-                if (OpenConnection())
-                {
-                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                    {
-                        try
-                        {
-                            cmd.ExecuteNonQuery();
-                        }
-                        catch (MySqlException ex)
-                        {
-                            MessageBox.Show($"Error: {ex.Message}");
-                        }
-                    }
-                    CloseConnection();
-                }
-            }
-        }
+        
 
 
         private void Form2_Load(object sender, EventArgs e)
@@ -148,6 +53,7 @@ namespace Programming3Home
         {
 
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -249,6 +155,15 @@ namespace Programming3Home
 
         }
 
+
+
+
+        private void refreshTimer_Tick(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
+        }
+
+
         private void HomeButton_MouseEnter(object sender, EventArgs e)
         {
            
@@ -267,8 +182,24 @@ namespace Programming3Home
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-            Form1 SearchForm = new Form1();
-            SearchForm.Show();
+
+            var home = new Form1();
+            home.Location = this.Location;
+            home.StartPosition = FormStartPosition.Manual;
+            home.FormClosing += delegate { this.Show(); };
+            home.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            var Add = new AddRecord();
+            Add.Location = this.Location;
+            Add.StartPosition = FormStartPosition.Manual;
+            Add.FormClosing += delegate { this.Show(); };
+            Add.Show();
+            this.Hide();
         }
     }
 }

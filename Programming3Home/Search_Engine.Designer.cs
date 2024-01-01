@@ -62,7 +62,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(30, 30);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(497, 549);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 471);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -77,6 +77,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "ClientID",
@@ -126,7 +127,7 @@
             this.paneMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneMenu.Location = new System.Drawing.Point(0, 0);
             this.paneMenu.Name = "paneMenu";
-            this.paneMenu.Size = new System.Drawing.Size(220, 684);
+            this.paneMenu.Size = new System.Drawing.Size(220, 606);
             this.paneMenu.TabIndex = 20;
             // 
             // Order
@@ -219,6 +220,7 @@
             this.button2.Text = "    Add Record";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // searchButton
             // 
@@ -278,7 +280,7 @@
             this.panel1.Location = new System.Drawing.Point(427, 75);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(30);
-            this.panel1.Size = new System.Drawing.Size(557, 609);
+            this.panel1.Size = new System.Drawing.Size(803, 531);
             this.panel1.TabIndex = 24;
             // 
             // panel2
@@ -287,7 +289,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(764, 75);
+            this.panel2.Size = new System.Drawing.Size(1010, 75);
             this.panel2.TabIndex = 23;
             // 
             // Search
@@ -298,7 +300,7 @@
             this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.Search.Location = new System.Drawing.Point(0, 0);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(764, 75);
+            this.Search.Size = new System.Drawing.Size(1010, 75);
             this.Search.TabIndex = 0;
             this.Search.Text = "Search Records";
             this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,7 +315,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(220, 75);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 609);
+            this.panel3.Size = new System.Drawing.Size(207, 531);
             this.panel3.TabIndex = 22;
             // 
             // label4
@@ -323,9 +325,9 @@
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(16, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 19;
-            this.label4.Text = "label4";
+            this.label4.Text = "Column select";
             // 
             // label3
             // 
@@ -334,24 +336,24 @@
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
             this.label3.Location = new System.Drawing.Point(16, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 18;
-            this.label3.Text = "label3";
+            this.label3.Text = "Search Bar";
             // 
-            // Form2
+            // Search_Engine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(984, 684);
+            this.ClientSize = new System.Drawing.Size(1230, 606);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.paneMenu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MinimumSize = new System.Drawing.Size(1000, 600);
-            this.Name = "Form2";
+            this.MinimumSize = new System.Drawing.Size(1245, 600);
+            this.Name = "Search_Engine";
             this.Text = "Search engine";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

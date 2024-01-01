@@ -44,7 +44,7 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Add_record = new System.Windows.Forms.Label();
+            this.Search = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -283,7 +283,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.Add_record);
+            this.panel2.Controls.Add(this.Search);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
@@ -292,16 +292,16 @@
             // 
             // Search
             // 
-            this.Add_record.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(201)))), ((int)(((byte)(56)))));
-            this.Add_record.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Add_record.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.Add_record.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.Add_record.Location = new System.Drawing.Point(0, 0);
-            this.Add_record.Name = "Search";
-            this.Add_record.Size = new System.Drawing.Size(764, 75);
-            this.Add_record.TabIndex = 0;
-            this.Add_record.Text = "Search Records";
-            this.Add_record.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(201)))), ((int)(((byte)(56)))));
+            this.Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Search.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.Search.Location = new System.Drawing.Point(0, 0);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(764, 75);
+            this.Search.TabIndex = 0;
+            this.Search.Text = "Search Records";
+            this.Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -383,7 +383,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label Add_record;
+        private System.Windows.Forms.Label Search;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }

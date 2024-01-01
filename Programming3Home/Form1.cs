@@ -19,16 +19,24 @@ namespace Programming3Home
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
-            // Create a new instance of the Form2 class
-            Search_Engine SearchForm = new Search_Engine();
 
-            // Show the settings form
-            SearchForm.Show();
+            var searchfrm = new Search_Engine();
+            searchfrm.Location = this.Location;
+            searchfrm.StartPosition = FormStartPosition.Manual;
+            searchfrm.FormClosing += delegate { this.Show(); };
+            searchfrm.Show();
+            this.Hide();
+
         }
 
         private void Form1_MouseHover(object sender, EventArgs e)
         {
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

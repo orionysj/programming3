@@ -76,8 +76,6 @@ C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.SuggestedBindingRedirects.cache
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.exe.config
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Form1.resources
-C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Form2.resources
-C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Form3.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Properties.Resources.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Search_engine.resources
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.GenerateResource.cache
@@ -86,8 +84,6 @@ C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.CopyComplete
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.exe
 C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.pdb
-C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Search.resources
-C:\Users\kyleh\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.Search.resources
 C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\Bunifu.UI.WinForms.xml
 C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
 C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\Microsoft.Win32.Registry.xml
@@ -118,3 +114,5 @@ C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\System.Servi
 C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\kyleh\source\repos\programming3\Programming3Home\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\kyleh\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.csproj.Fody.CopyLocal.cache
+C:\Users\kyleh\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.AddRecord.resources
+C:\Users\owner\source\repos\programming3\Programming3Home\obj\Debug\Programming3Home.AddRecord.resources
