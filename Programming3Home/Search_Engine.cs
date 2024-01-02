@@ -82,10 +82,7 @@ namespace Programming3Home
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MySQLConnector Programming3Home = new MySQLConnector();
-            string query = "SELECT * FROM Clients";
-            dataGridView1.DataSource = Programming3Home.ExecuteQuery(query);
-
+            
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
