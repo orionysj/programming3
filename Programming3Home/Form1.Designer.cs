@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.ClientDataTable = new System.Windows.Forms.DataGridView();
+            this.ClientDataTablehome = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.AddClientButton = new System.Windows.Forms.Button();
