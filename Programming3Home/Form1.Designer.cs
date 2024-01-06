@@ -38,7 +38,7 @@
             this.OrderClientButton = new System.Windows.Forms.Button();
             this.SaveClientButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ClientDataTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientDataTablehome)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,15 +52,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Client Registration System";
             // 
-            // ClientDataTable
+            // ClientDataTablehome
             // 
-            this.ClientDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientDataTable.Location = new System.Drawing.Point(16, 100);
-            this.ClientDataTable.Name = "ClientDataTable";
-            this.ClientDataTable.RowHeadersWidth = 57;
-            this.ClientDataTable.RowTemplate.Height = 24;
-            this.ClientDataTable.Size = new System.Drawing.Size(654, 432);
-            this.ClientDataTable.TabIndex = 1;
+            this.ClientDataTablehome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ClientDataTablehome.Location = new System.Drawing.Point(16, 100);
+            this.ClientDataTablehome.Name = "ClientDataTablehome";
+            this.ClientDataTablehome.RowHeadersWidth = 57;
+            this.ClientDataTablehome.RowTemplate.Height = 24;
+            this.ClientDataTablehome.Size = new System.Drawing.Size(654, 432);
+            this.ClientDataTablehome.TabIndex = 1;
+            this.ClientDataTablehome.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClientDataTablehome_CellContentClick);
             // 
             // textBox1
             // 
@@ -87,7 +88,6 @@
             this.AddClientButton.TabIndex = 4;
             this.AddClientButton.Text = "Add New Client Details/Record";
             this.AddClientButton.UseVisualStyleBackColor = true;
-            this.AddClientButton.Click += new System.EventHandler(this.AddClientButton_Click);
             // 
             // RemoveClientButton
             // 
@@ -107,6 +107,7 @@
             this.PrintClientButton.TabIndex = 6;
             this.PrintClientButton.Text = "Print Client Details/Record";
             this.PrintClientButton.UseVisualStyleBackColor = true;
+            this.PrintClientButton.Click += new System.EventHandler(this.PrintClientButton_Click);
             // 
             // OrderClientButton
             // 
@@ -150,12 +151,13 @@
             this.Controls.Add(this.AddClientButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.ClientDataTable);
+            this.Controls.Add(this.ClientDataTablehome);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "Form1";
             this.Text = "Home - Client Registration System";
-            ((System.ComponentModel.ISupportInitialize)(this.ClientDataTable)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ClientDataTablehome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,7 +166,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView ClientDataTable;
+        private System.Windows.Forms.DataGridView ClientDataTablehome;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button AddClientButton;

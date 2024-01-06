@@ -16,5 +16,21 @@ namespace Programming3Home
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PrintRedirect printRedirect = new PrintRedirect();
+            printRedirect.ShowDialog();
+        }
+
+        private void PrintConfirmation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

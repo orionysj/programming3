@@ -61,6 +61,7 @@
             this.removeno.TabIndex = 2;
             this.removeno.Text = "No";
             this.removeno.UseVisualStyleBackColor = true;
+            this.removeno.Click += new System.EventHandler(this.removeno_Click_1);
             // 
             // RemoveConfirmation
             // 

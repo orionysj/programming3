@@ -16,5 +16,33 @@ namespace Programming3Home
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
+    }
+
+    namespace MultipleFormCLosing
+    {
+        public partial class Form1 : Form
+        {
+            public Form1()
+            {
+                InitializeLifetimeService();
+            }
+            private void button1_Click(object sender, EventArgs e)
+            {
+                CloseAllFormsExceptMain();
+            }
+            private void CloseAllFormsExceptMain()
+            {
+                foreach (Form form in Application.OpenForms)
+                {
+                    if (form != this)
+                    { form.Close(); }
+                }
+            }
+        }
     }
 }

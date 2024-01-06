@@ -29,5 +29,10 @@ namespace Programming3Home
             SearchForm.Show();
             this.Close();
         }
+
+        private void removeno_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
