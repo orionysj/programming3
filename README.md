@@ -45,7 +45,8 @@ To use this project with your MySQL database, you need to configure the `MySQLCo
 
 ## Getting Started with the Program
 
-Welcome to the program! Here's a quick guide on how to navigate and use its features:
+### Welcome to the program! Here's a quick guide on how to navigate and use its features:
+
 ![image](https://github.com/orionysj/programming3/assets/56135061/6a18b36a-9633-4a6b-9fe3-b752032963b7)
 
 
