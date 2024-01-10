@@ -43,4 +43,22 @@ To use this project with your MySQL database, you need to configure the `MySQLCo
 
 4. Save the changes.
 
+## Getting Started with the Program
+
+Welcome to the program! Here's a quick guide on how to navigate and use its features:
+![image](https://github.com/orionysj/programming3/assets/56135061/6a18b36a-9633-4a6b-9fe3-b752032963b7)
+
+
+### Home Screen
+- All pages share a consistent layout, ensuring familiarity.
+- On the left side of the screen, find a list of functions for easy navigation.
+
+### Navigation
+1. Click on the desired function to access the corresponding page.
+2. Each page provides settings located where app information is typically found.
+  
+### Performing Actions
+- Once on a page, leverage the settings to manipulate displayed data or interact with the database.
+  
+Enjoy exploring the program's functionality! If you have any questions, refer to the documentation or feel free to reach out for assistance.
 
