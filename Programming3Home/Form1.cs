@@ -47,10 +47,10 @@ namespace Programming3Home
             // Initialize the connection properties
             private void Initialize()
             {
-                server = "ysjcs.net"; // Replace with your MySQL server hostname or IP address
-                database = "lukefinan"; // Replace with your MySQL database name
-                username = "luke.finan"; // Replace with your MySQL username
-                password = "ME7G8FAF"; // Replace with your MySQL password
+                server = ""; // Replace with your MySQL server hostname or IP address
+                database = ""; // Replace with your MySQL database name
+                username = ""; // Replace with your MySQL username
+                password = ""; // Replace with your MySQL password
 
                 string connectionString = $"Server={server};Database={database};Uid={username};Pwd={password};";
                 connection = new MySqlConnection(connectionString);
