@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace Programming3Home.Properties
 {
 
@@ -33,6 +35,8 @@ namespace Programming3Home.Properties
         internal Resources()
         {
         }
+
+        public static Image E265_color { get; internal set; }
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
@@ -65,6 +69,188 @@ namespace Programming3Home.Properties
             set
             {
                 resourceCulture = value;
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1F5A8_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("1F5A8_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1F5asdfasf0D_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("1F5asdfasf0D_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25C_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25C_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25E_co2lor
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25E_co2lor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25E_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25E_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25E_color1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25E_color1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25F_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25F_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E25F_color1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E25F_color1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E262_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("E262_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_co2lor
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo-co2lor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_color
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo-color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_color2
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo-color2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_color21
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo-color21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_design___logo___logos___logo_designs___logo_designer___logos_design___logo_designing
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo design - logo - logos - logo designs - logo designer - logos design - logo d" +
+                        "esigning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_design___logo___logos___logo_designs___logo_designer___logos_design___logo_designing1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("logo design - logo - logos - logo designs - logo designer - logos design - logo d" +
+                        "esigning1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

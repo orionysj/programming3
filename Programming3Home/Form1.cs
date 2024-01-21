@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,25 +10,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+//All functionality in this file was implemented by Orion Williams
+
 namespace Programming3Home
 {
     public partial class Form1 : Form
     {
+        private int orderBy { get; set; }
+        private string[] orderByTranslations = { "clients.ClientID", "clients.FirstName", "clients.LastName", "clients.Address", "clients.Phone", "clients.Email", "services.Software desc", "services.LaptopsPC desc", "services.Games desc", "services.OfficeTools desc", "services.Accessories desc" };
         public Form1()
         {
             InitializeComponent();
+            orderBy = 0;
             refresh();
         }
 
-        private void refresh(string query = "select clients.ClientID, clients.FirstName, clients.LastName, clients.Address, clients.Phone, clients.Email, services.Software, services.LaptopsPC, services.Games,services.OfficeTools, services.Accessories from clients inner join services on clients.ServiceID = services.ServiceID")
+        private void refresh(string query = "select clients.ClientID, clients.FirstName, clients.LastName, clients.Address, clients.Phone, clients.Email, services.Software, services.LaptopsPC, services.Games, services.OfficeTools, services.Accessories from clients inner join services on clients.ServiceID = services.ServiceID")
         {
             MySQLConnector connector = new MySQLConnector();
-            ClientDataTable.DataSource = connector.ExecuteQuery(query);
+            var queryToRun = query + " order by " + orderByTranslations[orderBy];
+            ClientDataTable.DataSource = connector.ExecuteQuery(queryToRun);
         }
 
         private void AddClientButton_Click(object sender, EventArgs e)
         {
-
+            AddRecord addForm = new AddRecord();
+            addForm.ShowDialog();
+            refresh();
         }
 
         private void ClientDataTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -37,12 +46,49 @@ namespace Programming3Home
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+            Search_Engine searchForm = new Search_Engine();
+            searchForm.ShowDialog();
             refresh();
         }
 
         private void OrderClientButton_Click(object sender, EventArgs e)
         {
+            Order orderForm = new Order(orderBy);
+            orderForm.ShowDialog();
+            orderBy = orderForm.getSelectedOption();
+            refresh();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void PrintClientButton_Click(object sender, EventArgs e)
+        {
+            MySQLConnector connector = new MySQLConnector();
+            string query = "select clients.ClientID, clients.FirstName, clients.LastName, clients.Address, clients.Phone, clients.Email, services.Software, services.LaptopsPC, services.Games, services.OfficeTools, services.Accessories from clients inner join services on clients.ServiceID = services.ServiceID";
+            var queryToRun = query + " order by " + orderByTranslations[orderBy];
+            DataTable data = connector.ExecuteQuery(queryToRun);
+            Print printForm = new Print(data);
+            printForm.ShowDialog();
+            refresh();
+        }
+
+        private void RemoveClientButton_Click(object sender, EventArgs e)
+        {
+            MySQLConnector connector = new MySQLConnector();
+            string query = "select clients.ClientID, clients.FirstName, clients.LastName, clients.Address, clients.Phone, clients.Email, services.Software, services.LaptopsPC, services.Games, services.OfficeTools, services.Accessories from clients inner join services on clients.ServiceID = services.ServiceID";
+            var queryToRun = query + " order by " + orderByTranslations[orderBy];
+            DataTable data = connector.ExecuteQuery(queryToRun);
+            Remove removeForm = new Remove(data);
+            removeForm.ShowDialog();
+            refresh();
         }
     }
 
@@ -61,10 +107,10 @@ namespace Programming3Home
 
         private void Initialize()
         {
-            server = "ysjcs.net";
-            database = "username";
-            username = "user.name";
-            password = "PASSWORD";
+            server = "";
+            database = "";
+            username = "";
+            password = "";
 
             string stringConnection = $"Server={server}; Database={database}; Uid={username}; Pwd={password}";
 

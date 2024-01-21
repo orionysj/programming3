@@ -12,24 +12,27 @@ namespace Programming3Home
 {
     public partial class Order : Form
     {
-        public Order()
+        // The code in this file was done by Orion Williams
+        private int selectedOption { get; set; }
+        public Order(int selectedOrderBy)
         {
             InitializeComponent();
-        }
-
-        private void Order_Load(object sender, EventArgs e)
-        {
-
+            selectedOption = selectedOrderBy;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            selectedOption = orderByOptions.SelectedIndex;
         }
 
-        private void orderBy_Click(object sender, EventArgs e)
+        public int getSelectedOption() //public getter method for parent form
         {
+            return selectedOption;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
